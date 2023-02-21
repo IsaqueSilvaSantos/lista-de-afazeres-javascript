@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Lista de Afazeres em JS</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <p>TO DO LIST MAKER</p>
+      </header>
+
+      <form id="form">
+        <input id="inputField" type="text" name="todo" placeholder="Adicionar Afazeres..." />
+        <button type="submit"><i class="fas fa-plus"></i></button>
+      </form>
+
+      <div class="toDoContainer" id="toDoContainer">
+        <div class="todo">
+          <li class="todo-text">Começar o dia</li>
+
+          <div class="buttons-div">
+            <button class="removeTodo-btn" onclick="DELETE_TODO(this.parentElement.parentElement)">
+              <i class="fas fa-trash"></i>
+            </button>
+            <button class="checkTodo-btn" onclick="COMPLETE_TODO(this)">
+              <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="todo">
+          <li class="todo-text">Fazer café</li>
+
+          <div class="buttons-div">
+            <button class="removeTodo-btn" onclick="DELETE_TODO(this.parentElement.parentElement)">
+              <i class="fas fa-trash"></i>
+            </button>
+            <button class="checkTodo-btn" onclick="COMPLETE_TODO(this)">
+              <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="todo">
+          <li class="todo-text">Levar lixo para fora</li>
+
+          <div class="buttons-div">
+            <button class="removeTodo-btn" onclick="DELETE_TODO(this.parentElement.parentElement)">
+              <i class="fas fa-trash"></i>
+            </button>
+            <button class="checkTodo-btn" onclick="COMPLETE_TODO(this)">
+              <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="todo">
+          <li class="todo-text">Dar banho nos cachorros</li>
+
+          <div class="buttons-div">
+            <button class="removeTodo-btn" onclick="DELETE_TODO(this.parentElement.parentElement)">
+              <i class="fas fa-trash"></i>
+            </button>
+            <button class="checkTodo-btn" onclick="COMPLETE_TODO(this)">
+              <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8c575b8150.js" crossorigin="anonymous"></script>
+  </body>
+</html>

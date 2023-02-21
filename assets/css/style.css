@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  font-family: "Anek Tamil", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+html,
+body {
+  font-size: 120%;
+  background-color: #cdcdcd;
+  transition: 0.2s;
+  padding: 0.5rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 3rem;
+}
+.container .header {
+  background-color: #de3f53;
+  color: #e1e3ea;
+  border-radius: 20px 20px 0em 0em;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+.container .header p {
+  font-size: 2.5rem;
+}
+.container #form {
+  display: flex;
+}
+.container #form input {
+  flex-grow: 1;
+  background-color: #3c4979;
+  padding: 0.7rem 0.5rem;
+  font-size: 1.4rem;
+  color: #e1e3ea;
+}
+.container #form input:focus {
+  outline: 2px solid #f00;
+}
+.container #form button {
+  color: #e1e3ea;
+  background-color: #1dd2af;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+.container #form button i {
+  font-size: 1.5rem;
+}
+.container #form button:hover {
+  transform: scale(1.1);
+}
+.container .toDoContainer .todo {
+  display: flex;
+  justify-content: space-between;
+  background-color: #262e4c;
+  padding: 1rem 0.5rem;
+  border-bottom: 3px solid #fff;
+}
+.container .toDoContainer .todo .todo-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e1e3ea;
+}
+.container .toDoContainer .todo .buttons-div {
+  display: flex;
+  gap: 1rem;
+}
+.container .toDoContainer .todo .buttons-div button {
+  font-size: 1.5rem;
+  background-color: #262e4c;
+  color: #e1e3ea;
+  cursor: pointer;
+}
+.container .toDoContainer .todo .buttons-div button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+  html,
+  body {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 70%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
